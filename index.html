@@ -315,7 +315,7 @@
     <!-- Knowledge map -->
     <section class="card">
       <div class="card-h">
-        <h2>교과서 진도</h2>
+        <h2>진도 Map</h2>
         <span class="tag">시각화</span>
       </div>
 
@@ -337,57 +337,60 @@
             </g>
 
             <!-- Nodes -->
-            <!-- Mastered -->
-            <g class="node mastered" transform="translate(140,60)">
+            <!-- 심화 (부호 정수 연산) -->
+            <g class="node pending" transform="translate(140,60)">
               <circle cx="40" cy="40" r="34" />
               <text x="40" y="44" text-anchor="middle">부호</text>
               <text x="40" y="64" text-anchor="middle" class="sub">정수 연산</text>
             </g>
 
-            <g class="node mastered" transform="translate(320,40)">
+            <!-- 유형 (분배 전개 기초) -->
+            <g class="node progress" transform="translate(320,40)">
               <circle cx="40" cy="40" r="34" />
               <text x="40" y="44" text-anchor="middle">분배</text>
               <text x="40" y="64" text-anchor="middle" class="sub">전개 기초</text>
             </g>
 
-            <g class="node mastered" transform="translate(320,130)">
+            <!-- 유형 (동류항 정리) -->
+            <g class="node progress" transform="translate(320,130)">
               <circle cx="40" cy="40" r="34" />
               <text x="40" y="44" text-anchor="middle">동류항</text>
               <text x="40" y="64" text-anchor="middle" class="sub">정리</text>
             </g>
 
-            <!-- In progress -->
-            <g class="node progress" transform="translate(500,40)">
+            <!-- 개념 (다항식 곱셈) -->
+            <g class="node mastered" transform="translate(500,40)">
               <circle cx="40" cy="40" r="34" />
               <text x="40" y="44" text-anchor="middle">다항식</text>
               <text x="40" y="64" text-anchor="middle" class="sub">곱셈</text>
             </g>
 
-            <g class="node progress" transform="translate(500,130)">
+            <!-- 개념 (괄호 마이너스) -->
+            <g class="node mastered" transform="translate(500,130)">
               <circle cx="40" cy="40" r="34" />
               <text x="40" y="44" text-anchor="middle">괄호</text>
               <text x="40" y="64" text-anchor="middle" class="sub">마이너스</text>
             </g>
 
-            <!-- Not yet -->
-            <g class="node pending" transform="translate(680,40)">
+            <!-- Not started (미진도) -->
+            <g class="node not-started" transform="translate(680,40)">
               <circle cx="40" cy="40" r="34" />
               <text x="40" y="44" text-anchor="middle">인수</text>
               <text x="40" y="64" text-anchor="middle" class="sub">분해</text>
             </g>
 
-            <g class="node pending" transform="translate(680,130)">
+            <g class="node not-started" transform="translate(680,130)">
               <circle cx="40" cy="40" r="34" />
               <text x="40" y="44" text-anchor="middle">항등식</text>
               <text x="40" y="64" text-anchor="middle" class="sub">구조</text>
             </g>
 
-            <g class="node pending" transform="translate(680,260)">
+            <g class="node not-started" transform="translate(680,260)">
               <circle cx="40" cy="40" r="34" />
-              <text x="40" y="44" text-anchor="middle">시간</text>
-              <text x="40" y="64" text-anchor="middle" class="sub">루틴화</text>
+              <text x="40" y="44" text-anchor="middle">공식</text>
+              <text x="40" y="64" text-anchor="middle" class="sub">응용</text>
             </g>
-
+            
             <g class="node progress" transform="translate(500,260)">
               <circle cx="40" cy="40" r="34" />
               <text x="40" y="44" text-anchor="middle">검산</text>
@@ -399,9 +402,10 @@
         <div class="km-right">
           <div class="legend-box">
             <div class="lb-title">범례</div>
-            <div class="lb-item"><span class="sw mastered"></span>정복(설명 가능)</div>
-            <div class="lb-item"><span class="sw progress"></span>진행 중(정확도↑)</div>
-            <div class="lb-item"><span class="sw pending"></span>다음 목표</div>
+            <div class="lb-item"><span class="sw mastered"></span>개념</div>
+            <div class="lb-item"><span class="sw progress"></span>유형</div>
+            <div class="lb-item"><span class="sw pending"></span>심화</div>
+            <div class="lb-item"><span class="sw not-started"></span>미진도</div>
           </div>
 
           <div class="insight">

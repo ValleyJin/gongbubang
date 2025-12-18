@@ -985,27 +985,35 @@ section:has(.km){
   filter: drop-shadow(0 12px 14px rgba(0,0,0,.30));
 }
 .node text{
-  fill: rgba(234,240,255,.96);
-  font-size: clamp(11px, 1.8vw, 14px);
+  fill: rgba(0,0,0,1);
+  font-size: clamp(14px, 2.5vw, 18px);
   font-weight: 900;
 }
 .node .sub{
-  fill: rgba(185,195,230,.95);
-  font-size: clamp(9px, 1.4vw, 11px);
+  fill: rgba(0,0,0,1);
+  font-size: clamp(12px, 2.2vw, 15px);
   font-weight: 700;
 }
 
+/* 미진도 (무채색) */
+.node.not-started circle{
+  fill: rgba(127,127,127,1);
+  stroke: rgba(180,180,180,1);
+}
+/* 개념 (노란색) */
 .node.mastered circle{
-  fill: rgba(46,229,157,.20);
-  stroke: rgba(46,229,157,.70);
+  fill: rgba(255,235,59,1);
+  stroke: rgba(255,235,59,1);
 }
+/* 유형 (오렌지색) */
 .node.progress circle{
-  fill: rgba(102,163,255,.16);
-  stroke: rgba(102,163,255,.70);
+  fill: rgba(255,152,0,1);
+  stroke: rgba(255,152,0,1);
 }
+/* 심화 (빨간색) */
 .node.pending circle{
-  fill: rgba(255,176,32,.14);
-  stroke: rgba(255,176,32,.75);
+  fill: rgba(255,92,122,1);
+  stroke: rgba(255,92,122,1);
 }
 
 .legend-box{
@@ -1017,9 +1025,14 @@ section:has(.km){
 .lb-title{font-size: clamp(14px, 2.3vw, 16px); font-weight: 900; margin-bottom:10px; word-wrap: break-word;}
 .lb-item{display:flex; align-items:center; gap:clamp(8px, 1.2vw, 10px); color: var(--muted); font-size: clamp(14px, 2.2vw, 15.5px); margin-top:clamp(4px, 0.8vw, 6px); word-wrap: break-word; overflow-wrap: break-word;}
 .sw{width:clamp(12px, 1.8vw, 14px); height:clamp(12px, 1.8vw, 14px); border-radius: 5px; border:1px solid rgba(255,255,255,.14); flex-shrink: 0;}
-.sw.mastered{background: rgba(46,229,157,.20); border-color: rgba(46,229,157,.70);}
-.sw.progress{background: rgba(102,163,255,.16); border-color: rgba(102,163,255,.70);}
-.sw.pending{background: rgba(255,176,32,.14); border-color: rgba(255,176,32,.75);}
+/* 개념 (노란색) */
+.sw.mastered{background: rgba(255,235,59,1); border-color: rgba(255,235,59,1);}
+/* 유형 (오렌지색) */
+.sw.progress{background: rgba(255,152,0,1); border-color: rgba(255,152,0,1);}
+/* 심화 (빨간색) */
+.sw.pending{background: rgba(255,92,122,1); border-color: rgba(255,92,122,1);}
+/* 미진도 (무채색) */
+.sw.not-started{background: rgba(127,127,127,1); border-color: rgba(180,180,180,1);}
 
 .insight{
   margin-top:clamp(10px, 1.5vw, 12px);
