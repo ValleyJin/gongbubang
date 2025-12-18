@@ -315,6 +315,40 @@ body{
   }
 }
 
+/* 교습사진 */
+.teaching-photo{
+  margin-top: clamp(14px, 2vw, 18px);
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  border-radius: 14px;
+  border: 1px solid var(--line);
+  background: rgba(0,0,0,.12);
+  padding: clamp(8px, 1.2vw, 10px);
+}
+.teaching-photo img{
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+/* 태블릿 (768px - 1024px) */
+@media (max-width: 1024px) and (min-width: 769px){
+  .teaching-photo{
+    margin-top: clamp(12px, 1.8vw, 16px);
+  }
+}
+
+/* 모바일 (768px 이하) */
+@media (max-width: 768px){
+  .teaching-photo{
+    margin-top: clamp(12px, 1.8vw, 16px);
+  }
+}
+
 /* Timeline Chart */
 .timeline-chart{
   margin-top: clamp(14px, 2vw, 18px);
