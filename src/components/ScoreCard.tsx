@@ -46,20 +46,20 @@ export function ScoreCard() {
                 <circle
                   cx="50"
                   cy="50"
-                  r="45"
+                  r="42"
                   fill="none"
                   stroke="currentColor"
-                  strokeWidth="8"
+                  strokeWidth="12"
                   className="text-muted opacity-20"
                 />
                 <circle
                   cx="50"
                   cy="50"
-                  r="45"
+                  r="42"
                   fill="none"
                   stroke="url(#gradient1)"
-                  strokeWidth="8"
-                  strokeDasharray={`${2 * Math.PI * 45 * 0.55} ${2 * Math.PI * 45}`}
+                  strokeWidth="12"
+                  strokeDasharray={`${2 * Math.PI * 42 * 0.55} ${2 * Math.PI * 42}`}
                   strokeDashoffset="0"
                   strokeLinecap="round"
                   className="transition-all duration-1000 ease-out"
@@ -67,24 +67,24 @@ export function ScoreCard() {
                 <circle
                   cx="50"
                   cy="50"
-                  r="45"
+                  r="42"
                   fill="none"
                   stroke="url(#gradient2)"
-                  strokeWidth="8"
-                  strokeDasharray={`${2 * Math.PI * 45 * 0.3} ${2 * Math.PI * 45}`}
-                  strokeDashoffset={`-${2 * Math.PI * 45 * 0.55}`}
+                  strokeWidth="12"
+                  strokeDasharray={`${2 * Math.PI * 42 * 0.3} ${2 * Math.PI * 42}`}
+                  strokeDashoffset={`-${2 * Math.PI * 42 * 0.55}`}
                   strokeLinecap="round"
                   className="transition-all duration-1000 ease-out"
                 />
                 <circle
                   cx="50"
                   cy="50"
-                  r="45"
+                  r="42"
                   fill="none"
                   stroke="url(#gradient3)"
-                  strokeWidth="8"
-                  strokeDasharray={`${2 * Math.PI * 45 * 0.15} ${2 * Math.PI * 45}`}
-                  strokeDashoffset={`-${2 * Math.PI * 45 * 0.85}`}
+                  strokeWidth="12"
+                  strokeDasharray={`${2 * Math.PI * 42 * 0.15} ${2 * Math.PI * 42}`}
+                  strokeDashoffset={`-${2 * Math.PI * 42 * 0.85}`}
                   strokeLinecap="round"
                   className="transition-all duration-1000 ease-out"
                 />
