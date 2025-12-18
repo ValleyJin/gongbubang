@@ -1,8 +1,7 @@
 import { Header } from "./components/Header"
 import { KPICard } from "./components/KPICard"
 import { ScoreCard } from "./components/ScoreCard"
-import { StrengthsPanel } from "./components/StrengthsPanel"
-import { WeaknessesPanel } from "./components/WeaknessesPanel"
+import { StrengthsWeaknessesContainer } from "./components/StrengthsWeaknessesContainer"
 import { SectionDivider } from "./components/SectionDivider"
 import { MediaSection } from "./components/MediaSection"
 import { AnalysisTable } from "./components/AnalysisTable"
@@ -42,9 +41,7 @@ function App() {
 
           <ScoreCard />
 
-          <StrengthsPanel />
-
-          <WeaknessesPanel />
+          <StrengthsWeaknessesContainer />
         </section>
 
         <SectionDivider />
