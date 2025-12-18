@@ -39,31 +39,98 @@ export function ScoreCard() {
         </div>
 
         <div className="space-y-3 sm:space-y-4 pt-3 sm:pt-4 border-t">
-          <div className="space-y-2 sm:space-y-3">
-            <h4 className="text-xs sm:text-sm font-semibold">오답 원인(사전)</h4>
-            <div
-              className="w-24 h-24 sm:w-32 sm:h-32 mx-auto rounded-full"
-              style={{
-                background: `conic-gradient(
-                  #3b82f6 0% 55%,
-                  #ef4444 55% 85%,
-                  #f59e0b 85% 100%
-                )`,
-              }}
-              aria-label="오답 원인: 시간압박 55%, 부호 30%, 기타 15%"
-            />
-            <div className="space-y-1.5 sm:space-y-2 text-xs sm:text-sm">
-              <div className="flex items-center gap-2">
-                <span className="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-blue-500 flex-shrink-0" />
-                <span>시간 압박(검산 미흡) 55%</span>
+          <div className="space-y-3 sm:space-y-4">
+            <h4 className="text-xs sm:text-sm font-semibold text-center">오답 원인(사전)</h4>
+            <div className="relative w-32 h-32 sm:w-40 sm:h-40 mx-auto">
+              <svg viewBox="0 0 100 100" className="w-full h-full transform -rotate-90">
+                <circle
+                  cx="50"
+                  cy="50"
+                  r="45"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="8"
+                  className="text-muted opacity-20"
+                />
+                <circle
+                  cx="50"
+                  cy="50"
+                  r="45"
+                  fill="none"
+                  stroke="url(#gradient1)"
+                  strokeWidth="8"
+                  strokeDasharray={`${2 * Math.PI * 45 * 0.55} ${2 * Math.PI * 45}`}
+                  strokeDashoffset="0"
+                  strokeLinecap="round"
+                  className="transition-all duration-1000 ease-out"
+                />
+                <circle
+                  cx="50"
+                  cy="50"
+                  r="45"
+                  fill="none"
+                  stroke="url(#gradient2)"
+                  strokeWidth="8"
+                  strokeDasharray={`${2 * Math.PI * 45 * 0.3} ${2 * Math.PI * 45}`}
+                  strokeDashoffset={`-${2 * Math.PI * 45 * 0.55}`}
+                  strokeLinecap="round"
+                  className="transition-all duration-1000 ease-out"
+                />
+                <circle
+                  cx="50"
+                  cy="50"
+                  r="45"
+                  fill="none"
+                  stroke="url(#gradient3)"
+                  strokeWidth="8"
+                  strokeDasharray={`${2 * Math.PI * 45 * 0.15} ${2 * Math.PI * 45}`}
+                  strokeDashoffset={`-${2 * Math.PI * 45 * 0.85}`}
+                  strokeLinecap="round"
+                  className="transition-all duration-1000 ease-out"
+                />
+                <defs>
+                  <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stopColor="#60a5fa" />
+                    <stop offset="100%" stopColor="#3b82f6" />
+                  </linearGradient>
+                  <linearGradient id="gradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stopColor="#f87171" />
+                    <stop offset="100%" stopColor="#ef4444" />
+                  </linearGradient>
+                  <linearGradient id="gradient3" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stopColor="#fbbf24" />
+                    <stop offset="100%" stopColor="#f59e0b" />
+                  </linearGradient>
+                </defs>
+              </svg>
+              <div className="absolute inset-0 flex items-center justify-center">
+                <div className="text-center">
+                  <div className="text-lg sm:text-xl font-bold">오답</div>
+                  <div className="text-xs sm:text-sm text-muted-foreground">원인 분석</div>
+                </div>
               </div>
-              <div className="flex items-center gap-2">
-                <span className="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-red-500 flex-shrink-0" />
-                <span>부호 처리 30%</span>
+            </div>
+            <div className="space-y-2 sm:space-y-2.5 pt-2">
+              <div className="flex items-center justify-between p-2 sm:p-2.5 rounded-lg bg-blue-500/10 border border-blue-500/20">
+                <div className="flex items-center gap-2.5">
+                  <div className="w-3 h-3 rounded-full bg-gradient-to-br from-blue-400 to-blue-600 shadow-sm" />
+                  <span className="text-xs sm:text-sm font-medium">시간 압박(검산 미흡)</span>
+                </div>
+                <span className="text-xs sm:text-sm font-bold text-blue-400">55%</span>
               </div>
-              <div className="flex items-center gap-2">
-                <span className="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-amber-500 flex-shrink-0" />
-                <span>기타(표기/전개 순서) 15%</span>
+              <div className="flex items-center justify-between p-2 sm:p-2.5 rounded-lg bg-red-500/10 border border-red-500/20">
+                <div className="flex items-center gap-2.5">
+                  <div className="w-3 h-3 rounded-full bg-gradient-to-br from-red-400 to-red-600 shadow-sm" />
+                  <span className="text-xs sm:text-sm font-medium">부호 처리</span>
+                </div>
+                <span className="text-xs sm:text-sm font-bold text-red-400">30%</span>
+              </div>
+              <div className="flex items-center justify-between p-2 sm:p-2.5 rounded-lg bg-amber-500/10 border border-amber-500/20">
+                <div className="flex items-center gap-2.5">
+                  <div className="w-3 h-3 rounded-full bg-gradient-to-br from-amber-400 to-amber-600 shadow-sm" />
+                  <span className="text-xs sm:text-sm font-medium">기타(표기/전개 순서)</span>
+                </div>
+                <span className="text-xs sm:text-sm font-bold text-amber-400">15%</span>
               </div>
             </div>
           </div>
