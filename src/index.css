@@ -37,3 +37,10 @@
   }
 }
 
+/* 모바일 폰트 크기 확대 */
+@media (max-width: 640px) {
+  body {
+    font-size: 16px;
+  }
+}
+

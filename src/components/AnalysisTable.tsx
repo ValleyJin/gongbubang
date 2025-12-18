@@ -41,7 +41,7 @@ export function AnalysisTable() {
       </CardHeader>
       <CardContent>
         <div className="overflow-x-auto -mx-4 sm:mx-0 px-4 sm:px-0">
-          <table className="w-full text-xs sm:text-sm border-collapse min-w-[600px]">
+          <table className="w-full text-sm sm:text-sm border-collapse min-w-[600px]">
             <thead>
               <tr className="border-b">
                 <th className="text-left p-1.5 sm:p-2 font-semibold whitespace-nowrap">오답 문항</th>
@@ -62,7 +62,7 @@ export function AnalysisTable() {
             </tbody>
           </table>
         </div>
-        <p className="text-xs text-muted-foreground mt-3 sm:mt-4 px-1">
+        <p className="text-sm text-muted-foreground mt-3 sm:mt-4 px-1">
           ※ A: 고1 형성평가 / B: 중학교 보강 문제지(난이도별 AI 엄선)
         </p>
       </CardContent>

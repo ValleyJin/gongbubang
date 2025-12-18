@@ -45,14 +45,14 @@ export function KPICard({ title, badge, kpis, imageUrl }: KPICardProps) {
         {kpis.map((kpi, index) => (
           <div key={index} className="space-y-1.5 sm:space-y-2">
             <div className="flex items-center justify-between">
-              <span className="text-xs sm:text-sm text-muted-foreground">{kpi.label}</span>
+              <span className="text-sm sm:text-sm text-muted-foreground">{kpi.label}</span>
               <span className="text-xl sm:text-2xl font-bold">
                 {kpi.score}
-                <span className="text-xs sm:text-sm text-muted-foreground font-normal">/100</span>
+                <span className="text-sm sm:text-sm text-muted-foreground font-normal">/100</span>
               </span>
             </div>
             <Progress value={kpi.score} className="h-1.5 sm:h-2" />
-            <p className="text-xs sm:text-xs text-muted-foreground leading-relaxed">{kpi.note}</p>
+            <p className="text-sm sm:text-xs text-muted-foreground leading-relaxed">{kpi.note}</p>
           </div>
         ))}
         {imageUrl && (

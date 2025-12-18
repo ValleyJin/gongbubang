@@ -12,9 +12,9 @@ export function LearningDesign() {
         <div className="border rounded-lg p-3 sm:p-4 space-y-2 sm:space-y-3">
           <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2">
             <h4 className="text-sm sm:text-base font-semibold">이번 주 학습 흐름</h4>
-            <Badge variant="outline" className="text-xs">진단 → 보강 → 재시험</Badge>
+            <Badge variant="outline" className="text-sm">진단 → 보강 → 재시험</Badge>
           </div>
-          <ol className="space-y-1.5 sm:space-y-2 text-xs sm:text-sm list-decimal list-inside leading-relaxed">
+          <ol className="space-y-1.5 sm:space-y-2 text-sm sm:text-sm list-decimal list-inside leading-relaxed">
             <li>
               <b>오답 수집:</b> 형성평가 A 오답(3,7,11,14,18) + 숙제 오답 7문항.
             </li>
@@ -33,9 +33,9 @@ export function LearningDesign() {
         <div className="border rounded-lg p-3 sm:p-4 space-y-2 sm:space-y-3">
           <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2">
             <h4 className="text-sm sm:text-base font-semibold">활용 교재</h4>
-            <Badge variant="outline" className="text-xs">교재 + AI</Badge>
+            <Badge variant="outline" className="text-sm">교재 + AI</Badge>
           </div>
-          <ul className="space-y-1.5 sm:space-y-2 text-xs sm:text-sm list-disc list-inside leading-relaxed">
+          <ul className="space-y-1.5 sm:space-y-2 text-sm sm:text-sm list-disc list-inside leading-relaxed">
             <li>
               <b>학교 부교재:</b> 고1 수학(다항식의 연산) Unit 2
             </li>
@@ -52,8 +52,8 @@ export function LearningDesign() {
         </div>
 
         <div className="border rounded-lg p-3 sm:p-4 bg-blue-500/10 border-blue-500/30">
-          <p className="text-xs sm:text-sm font-semibold mb-1.5 sm:mb-2">다음 주 목표(핵심 2가지)</p>
-          <p className="text-xs sm:text-sm leading-relaxed">
+          <p className="text-sm sm:text-sm font-semibold mb-1.5 sm:mb-2">다음 주 목표(핵심 2가지)</p>
+          <p className="text-sm sm:text-sm leading-relaxed">
             ① 시간 압박에서도 "부호→전개→정리→검산" 루틴 유지
             <br />
             ② 인수분해 진입 전, 마이너스 괄호/동류항 자동화 완성
