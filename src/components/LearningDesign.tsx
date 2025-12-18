@@ -9,7 +9,7 @@ export function LearningDesign() {
         <Badge variant="good">AI 맞춤 보강</Badge>
       </CardHeader>
       <CardContent className="space-y-3 sm:space-y-4">
-        <div className="border rounded-lg p-3 sm:p-4 space-y-2 sm:space-y-3">
+        <div className="chart-section group border rounded-lg p-3 sm:p-4 space-y-2 sm:space-y-3 border-transparent hover:border-border hover:bg-muted/20 transition-all duration-300 ease-in-out hover:scale-105 cursor-pointer">
           <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2">
             <h4 className="text-sm sm:text-base font-semibold">이번 주 학습 흐름</h4>
             <Badge variant="outline" className="text-xs">진단 → 보강 → 재시험</Badge>
@@ -30,7 +30,7 @@ export function LearningDesign() {
           </ol>
         </div>
 
-        <div className="border rounded-lg p-3 sm:p-4 space-y-2 sm:space-y-3">
+        <div className="chart-section group border rounded-lg p-3 sm:p-4 space-y-2 sm:space-y-3 border-transparent hover:border-border hover:bg-muted/20 transition-all duration-300 ease-in-out hover:scale-105 cursor-pointer">
           <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2">
             <h4 className="text-sm sm:text-base font-semibold">활용 교재</h4>
             <Badge variant="outline" className="text-xs">교재 + AI</Badge>
@@ -51,7 +51,7 @@ export function LearningDesign() {
           </ul>
         </div>
 
-        <div className="border rounded-lg p-3 sm:p-4 bg-blue-500/10 border-blue-500/30">
+        <div className="chart-section group border rounded-lg p-3 sm:p-4 bg-blue-500/10 border-blue-500/30 hover:bg-blue-500/15 hover:border-blue-500/40 transition-all duration-300 ease-in-out hover:scale-105 cursor-pointer">
           <p className="text-sm sm:text-sm font-semibold mb-1.5 sm:mb-2">다음 주 목표(핵심 2가지)</p>
           <p className="text-sm sm:text-sm leading-relaxed">
             ① 시간 압박에서도 "부호→전개→정리→검산" 루틴 유지

@@ -2,7 +2,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "./ui/card"
 
 export function StrengthsPanel() {
   return (
-    <Card>
+    <Card className="chart-section group transition-all duration-300 ease-in-out hover:scale-105 cursor-pointer">
       <CardHeader>
         <CardTitle className="text-lg font-semibold">잘하는 부분</CardTitle>
       </CardHeader>

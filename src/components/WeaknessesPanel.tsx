@@ -2,7 +2,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "./ui/card"
 
 export function WeaknessesPanel() {
   return (
-    <Card>
+    <Card className="chart-section group transition-all duration-300 ease-in-out hover:scale-105 cursor-pointer">
       <CardHeader>
         <CardTitle className="text-lg font-semibold">미진한 부분</CardTitle>
       </CardHeader>
